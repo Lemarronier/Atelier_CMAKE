@@ -4,11 +4,11 @@
 #include "./../include/calculator.h"
 
 int main(int argc, char *argv[]){
+  double r = 0;
   if (argc == 4) {
     char* op = argv[1];
     char* a = argv[2];
     char* b = argv[3];
-    double r = 0;
     if (strcmp(op, "add") == 0) {
       r = _add(atof(a), atof(b));
       printf("%lf",r);
